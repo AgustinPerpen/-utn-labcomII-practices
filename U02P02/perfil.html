@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+    <h1>Datos personales</h1>
+    <hr>
+    <h4>Rellene el formulario con su informacion personal</h4>
+    <form action="/accion.php" method="POST" target="_blank">
+    <label>Estado:</label>
+    <input
+        type="text"
+        name="ESTUDIANTE"              
+        size="40"
+        maxlength="20"
+        disabled
+        readonly
+        placeholder="ESTUDIANTE"  
+        />
+        <br>
+    <label for="Nombre">Nombre y apellido:</label>
+
+    <input
+        type="text"
+        name="Nombre"
+        id="Nombre"              
+        size="40"
+         maxlength="20"             
+        placeholder="Ingrese su nombre y apellido"
+        required 
+        />
+        <br>
+    <label for="email">Email:</label>
+    <input
+        type="text"
+        name="email"
+        id="email"              
+        size="40"                          
+        placeholder="Ingrese su email"
+        required 
+        />
+        <br>
+    <label for="edad">Edad:</label>
+    <input
+        type="text"
+        name="edad"
+        id="edad"              
+        size="40"
+        maxlength="20"             
+        placeholder="Ingrese su edad"
+        required  
+        />
+        <br>
+    <label for="Nacionalidad">Nacionalidad:</label>
+    <select name="Nacionalidad" id="Nacionalidad" required>
+        <option value="Argentina">Argentina</option>
+        <option value="Chile">Chile</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Paraguay">Paraguay</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Peru">Peru</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Brasil">Brasil</option>
+    </select>
+        <br>
+    <label for="Condicion">Condicion laboral:</label>
+    <select name="Condicion" id="Condicion" required>
+        <option value="Desempleado">Desempleado</option>
+        <option value="En búsqueda laboral">En búsqueda laboral</option>
+        <option value="Trabajo part time">Trabajo part time</option>
+        <option value="Trabajo full time">Trabajo full time</option>
+    </select>
+    <br>
+    <h3>Gustos personales</h3>
+    <label for="gustos">Gustos musicales:</label>
+    <input
+        type="text"
+        name="gustos"
+        id="gustos"              
+        size="40"
+        maxlength="20"             
+        placeholder="Ej: Rock"
+        required
+        />
+    <br>
+    <label for="Comidas">Comidas favoritas:</label>
+    <select name="Comidas" id="Comidas" required>
+        <option value="Pan">Pan</option>
+        <option value="Arroz con leche">Arroz con leche</option>
+        <option value="Fideos con matenca">Fideos con manteca</option>
+        <option value="Sopa">Sopa</option>
+        <option value="Pato a la naranja">Pato a la naranja</option>
+    </select>
+    <br>
+    <label for="check">Recordar datos del usuario</label>
+        <input
+              type="checkbox"
+              name="check" 
+              id="check"                     
+        />
+    <input type="submit" value="Enviar"></input>   
+</form>
+</body>
+</html>

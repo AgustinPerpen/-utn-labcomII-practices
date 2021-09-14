@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<fieldset lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,7 @@
     <h1>Datos personales</h1>
     <hr>
     <h4>Rellene el formulario con su informacion personal</h4>
+    <fieldset>
     <form action="/accion.php" method="POST" target="_blank">
     <label>Estado:</label>
     <input
@@ -28,7 +29,7 @@
         name="Nombre"
         id="Nombre"              
         size="40"
-         maxlength="20"             
+        maxlength="20"             
         placeholder="Ingrese su nombre y apellido"
         required 
         />
@@ -73,8 +74,12 @@
         <option value="Trabajo part time">Trabajo part time</option>
         <option value="Trabajo full time">Trabajo full time</option>
     </select>
+    </form>    
+    </fieldset>
     <br>
     <h3>Gustos personales</h3>
+    <fieldset>
+    <form method="POST" target="_blank">
     <label for="gustos">Gustos musicales:</label>
     <input
         type="text"
@@ -96,12 +101,13 @@
     </select>
     <br>
     <label for="check">Recordar datos del usuario</label>
-        <input
-              type="checkbox"
-              name="check" 
-              id="check"                     
+    <input
+        type="checkbox"
+        name="check" 
+        id="check"                     
         />
-    <input type="submit" value="Enviar"></input>   
+    <input type="submit" value="Enviar"> 
 </form>
+</fieldset>
 </body>
 </html>
